@@ -1,0 +1,137 @@
+/* PC,スマホ共通スタイル */
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:"Noto Sans JP", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+p {
+  margin: 0;
+}
+
+/* ヘッダーのスタイル */
+#header-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+  align-items: center;
+  max-width: 960px;
+}
+
+#header-div a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 400;
+}
+h1 {
+  margin: 0 0 0 20px;
+  font-size: 34px;
+  border: 1px solid black;
+  padding: 0 20px;
+}
+.home {
+  text-decoration: none;
+}
+
+nav .menu {
+  display: flex;
+  padding-left: 0;
+}
+nav li {
+  margin: 0 20px;
+  list-style: none;
+}
+nav a {
+  font-size: 34px;
+}
+
+#first-view > img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* アバウトのスタイル */
+#about-box {
+  align-items: center;
+  display: flex;
+  max-width: 960px;
+  padding: 10px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+.face-photo {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+}
+.myprofile-detail {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.name {
+  font-size: 24px;
+  font-weight: 500;
+}
+h2 {
+  padding: 60px 0 40px;
+  margin: 0;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 400;
+}
+
+img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ワークスのスタイル */
+#works-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+.item {
+  margin: 0 10px;
+  padding-bottom: 60px;
+  width: 25%;
+}
+footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝
+スマートフォン用のスタイル
+＝＝＝＝＝＝＝＝＝＝＝*/
+
+@media (max-width: 767px) {
+
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    padding: 30px 0 20px;
+    font-size: 28px;
+  }
+  nav li {
+    margin: 0 10px;
+  }
+  nav a {
+    font-size: 21px;
+  }
+  .item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+}
